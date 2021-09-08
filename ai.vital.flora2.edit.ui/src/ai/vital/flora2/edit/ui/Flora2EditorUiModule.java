@@ -4,7 +4,6 @@
 package ai.vital.flora2.edit.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.eclipse.xtext.ui.editor.syntaxcoloring.DefaultHighlightingConfiguration;
 import org.eclipse.xtext.ui.editor.syntaxcoloring.IHighlightingConfiguration;
 
 import ai.vital.flora2.edit.ui.highlight.Flora2AntlrTokenToAttributeIdMapper;
