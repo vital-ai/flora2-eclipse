@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.vital.ai/flora2/edit/Flora2Editor" 
+       class = "ai.vital.flora2.edit.flora2Editor.Flora2EditorPackage"
+       genModel = "model/generated/Flora2Editor.genmodel" /> 
+	
+  </extension>
+
+
+
+</plugin>

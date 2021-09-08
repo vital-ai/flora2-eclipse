@@ -1,0 +1,20 @@
+
+test :- hello, world, !.
+
+test, hello, test, !.
+
+% hi
+
+happy(house).
+
+\if (hello) \then ().
+
+
+test :- 1234.
+
+
+bye :- 'hello'.
+
+/* hello */
+
+.

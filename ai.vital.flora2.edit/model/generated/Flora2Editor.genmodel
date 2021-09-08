@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ai.vital.flora2.edit/src-gen" editDirectory="/ai.vital.flora2.edit.edit/src"
+    editorDirectory="/ai.vital.flora2.edit.editor/src" modelPluginID="ai.vital.flora2.edit"
+    forceOverwrite="true" modelName="Flora2Editor" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="ai.vital.flora2.edit.edit"
+    editorPluginID="ai.vital.flora2.edit.editor" runtimeVersion="2.27">
+  <genPackages prefix="Flora2Editor" basePackage="ai.vital.flora2.edit" disposableProviderFactory="true"
+      fileExtensions="flr" ecorePackage="Flora2Editor.ecore#/">
+    <genClasses ecoreClass="Flora2Editor.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Flora2Editor.ecore#//Model/exps"/>
+    </genClasses>
+    <genClasses ecoreClass="Flora2Editor.ecore#//Expression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Flora2Editor.ecore#//Expression/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Flora2Editor.ecore#//Expression/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Flora2Editor.ecore#//Expression/right"/>
+    </genClasses>
+    <genClasses ecoreClass="Flora2Editor.ecore#//UnaryExpression"/>
+    <genClasses ecoreClass="Flora2Editor.ecore#//AtomExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Flora2Editor.ecore#//AtomExpression/atom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Flora2Editor.ecore#//AtomExpression/terms"/>
+    </genClasses>
+    <genClasses ecoreClass="Flora2Editor.ecore#//VariableExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Flora2Editor.ecore#//VariableExpression/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Flora2Editor.ecore#//StringExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Flora2Editor.ecore#//StringExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Flora2Editor.ecore#//NumberExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Flora2Editor.ecore#//NumberExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Flora2Editor.ecore#//ListExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Flora2Editor.ecore#//ListExpression/head"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Flora2Editor.ecore#//ListExpression/tail"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
